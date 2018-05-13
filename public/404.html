@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
+	<head>
+		<title>Page Not Found (404)</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<style>
   .rails-default-error-page {
     background-color: #EFEFEF;
     color: #2E2F30;
@@ -51,17 +51,36 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
-  </style>
-</head>
+  .rails-default-error-page button {
+    background-color: #B00100;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
+		</style>
+	</head>
 
-<body class="rails-default-error-page">
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
-    </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
-</body>
+	<body class="rails-default-error-page">
+		<!-- This file lives in public/404.html -->
+		<div class="dialog">
+			<div>
+				<h1>No such page, dude</h1>
+				<p>What were you looking for anyway?</p>
+				<div>
+					<button onclick="goBack()">Go Back</button>
+				</div>
+				<p></p>
+			</div>
+			<p>Next time - better</p>
+		</div>
+		<script>
+			function goBack() {
+				window.history.back();
+			}
+		</script>
+	</body>
 </html>

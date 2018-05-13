@@ -51,6 +51,16 @@
     color: #666;
     box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
   }
+  .rails-default-error-page button {
+    background-color: #B00100;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
   </style>
 </head>
 
@@ -60,6 +70,10 @@
     <div>
       <h1>The change you wanted was rejected.</h1>
       <p>Maybe you tried to change something you didn't have access to.</p>
+	  <div>
+		  <button onclick="goBack()">Go Back</button>
+	  </div>
+	  <p></p>
     </div>
     <p>If you are the application owner check the logs for more information.</p>
   </div>
